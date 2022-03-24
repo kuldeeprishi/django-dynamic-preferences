@@ -19,6 +19,10 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+
+      - name: Test
+        run: |
+          echo "HELLO"
       - uses: actions/checkout@v3
 
       - uses: actions/setup-python@v3
